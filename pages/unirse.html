@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--META TAGS-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Organizacion akatsuki, Imponer la Paz Mediante la Fuerza. Web dedicada a contar un poco sobre la organizacion, sus miembros y sus principios.">
+    <meta name="keywords" content="HTML, JS, CSS, akatsuki, naruto, organizacion, miembros, galeria de fotos, unirse.">
+
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+    <link rel="stylesheet" href="css/animate.min.css"/>
+
+    <!--FONTS-->
+    <link rel="stylesheet" href="../css/fonts.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="media/" type="image/x-icon">
+
+    <title>UNIRSE</title>
+</head>
+<body class="bodyunirse">
+    <header>
+        <!--NAVBAR-->
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <a href="../index.html"><img class="logo wow animate__animated animate__jello" src="../media/simbolo.png" alt="simbolo"></a>
+            <a class="navbar-brand wow animate__animated animate__pulse" href="../index.html">AKATSUKI</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="miembros.html">Miembros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historia.html">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-button m-auto" href="unirse.html">Unirse</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--BANNER-->
+        <section class="bannerUnirse">
+            <div class="bannerunirse__container">
+                <h1 class="bannerunirse__title wow animate__animated animate__fadeIn">UNIRSE</h1>
+            </div>
+        </section>
+        <div class="backgroundunirse">
+            <!--FORMULARIO -->
+            <div class="form__container wow animate__animated animate__pulse">
+                <div class="form__title">Registrate</div>
+                <form action="unirse.html" method="POST" enctype="multipant/form/data">
+                    <div class="form__user-details">
+                        <div class="form__input-box">
+                            <span class="form__details">Nombre:</span>
+                            <input class="form__input" type="text" name="nombre" placeholder="Ingresa tu nombre" required>
+                        </div>
+                        <div class="form__input-box">
+                            <span class="form__details">Edad:</span>
+                            <input class="form__input" type="text" name="nombre" placeholder="Ingresa tu edad" required>
+                        </div>
+                        <div class="form__input-box">
+                            <span class="form__details">Peso:</span>
+                            <input class="form__input" type="text" name="nombre" placeholder="Ingresa tu peso" required>
+                        </div>
+                        <div class="form__input-box">
+                            <span class="form__details">Aldea:</span>
+                            <input class="form__input" type="text" name="nombre" placeholder="Ingresa tu aldea" required>
+                        </div>
+                        <div class="form__input-box">
+                            <span class="form__details">Clan:</span>
+                            <input class="form__input" type="text" name="nombre" placeholder="Ingresa tu clan" required>
+                        </div>
+                        <div class="form__input-box">
+                            <span class="form__details">Email:</span>
+                            <input class="form__input" type="text" name="nombre" placeholder="Ingresa tu email" required>
+                        </div>
+                    </div>
+                    <div class="form__block">
+                        <div class="form__gender-details">
+                            <input type="radio" name="gender" id="dot-1">
+                            <input type="radio" name="gender" id="dot-2">
+                            <span class="form__gender-title">Genero:</span>
+                            <div class="form__category">
+                                <label class="form__gender-label" for="dot-1">
+                                    <span class="form__dot form__one"></span>
+                                    <span class="form__gender">Hombre</span>
+                                </label>
+                                <label class="form__gender-label" for="dot-2">
+                                    <span class="form__dot form__two"></span>
+                                    <span class="form__gender">Mujer</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form__options">
+                            <span class="form__options-title">Naturaleza de Chakra:</span>
+                            <select class="form__select" name="opciones">
+                                <option class="form__option-select" selected disabled>Selecciona tu opcion</option>
+                                <option class="form__option">Viento</option>
+                                <option class="form__option">Tierra</option>
+                                <option class="form__option">Agua</option>
+                                <option class="form__option">Fuego</option>
+                                <option class="form__option">Rayo</option>
+                            </select>
+                        </div>
+                        <div class="form__options">
+                            <span class="form__options-title">Tipo de Jutsu:</span>
+                            <select class="form__select" name="opciones">
+                                <option class="form__option" selected disabled>Selecciona tu opcion</option>
+                                <option class="form__option">Ninjutsu</option>
+                                <option class="form__option">Taijutsu</option>
+                                <option class="form__option">Genjutsu</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form__objetives">
+                        <span class="form__textarea-title">Objetivos:</span>
+                        <textarea class="form__textarea" name="objetivo" placeholder="ej: Destruir Konoha"></textarea>
+                    </div>
+                    <div class="form__button">
+                        <a class="form__button-input" href="index.html" onclick="alertModal()" type="sumbit" value="Enviar">ENVIAR</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!--FOOTER-->
+    <footer>
+        <div class="footercontent">
+            <ul class="footercontent__socials">
+                <li class="footercontent__list"><a class="footercontent__icons" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                <li class="footercontent__list"><a class="footercontent__icons" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                <li class="footercontent__list"><a class="footercontent__icons" target="_blank" href="https://www.linkedin.com/in/"><i class="fab fa-linkedin-in"></i></a></li>
+                <li class="footercontent__list"><a class="footercontent__icons" target="_blank" href="https://github.com/"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
+        <div class="footerbutton">
+            <p class="footerbutton__text">copy right &copy;2021 Akatsuki. designed by <span class="footerbutton__text-span">Gino De Girolamo</span></p>
+        </div>
+    </footer>
+    <!--SCRIPTS-->
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://kit.fontawesome.com/3e7e932d86.js" crossorigin="anonymous"></script>
+    <script script>new WOW().init();</script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
